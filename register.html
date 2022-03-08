@@ -40,6 +40,18 @@
 
                     
                     <form class="row g-3" action="" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" value="">                        
+                        <div class="media mb-2">
+                            <img src="" class="mr-3 thumbnail" width="75" alt="Profile photo">
+                            <div class="media-body">
+                              <h5 class="mt-0">Add your photo (optional)</h5>
+                              <small class="text-muted d-block">Supported formats: jpg, jpeg, png.</small>
+                              <label for="photo">
+                                <i class="fas fa-upload"></i> click to upload
+                                <input type="file" name="photo" id="photo" onchange="displayImage(this)" hidden>
+                              </label>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="inputName" class="form-label"></label>
